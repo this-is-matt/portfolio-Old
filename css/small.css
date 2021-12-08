@@ -1,0 +1,28 @@
+main{
+    max-width: 1500px;
+    display: flex;
+    flex: 0 0 0 Auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+header{
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+header img{
+    max-width: 50px;
+}
+header h1{
+    display: inline;
+    margin: 1rem;
+}
+.siteImg{
+    max-width: 800px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #777;
+}
+main div{
+    margin: 1rem;
+}
