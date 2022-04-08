@@ -3,51 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home | Matt's Web Development Portfoio</title>
-    <meta name="description" content="Matt Palmer's portfolio. This site is to demosntrate skills and abilities.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/MPLogo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/small.css">
+    <title>HOME || Porfolio || Matt Palmer</title>
+    <meta name="description" content="Home page for Matt's portfolio">
+    <meta name="author" Content="Matt Palmer">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="controller/controller.js"></script>
+
+
 </head>
 
 <body>
-    <header>
-        <img src="images/MPLogoWhite.svg" alt="MP Logo">
-        <h1>Matt Palmer Portfolio</h1>
-        
-    </header>
-    <!-- <nav class="sideNav">
-        <ul>
-            <li><a href="">filler🔻</a></li>
-            <li><a href="">filler🔻</a></li>
-            <li><a href="">filler🔻</a></li>
-            <li><a href="">filler🔻</a></li>
-            <li><a href="">filler🔻</a></li>
-        </ul>
-    </nav> -->
+    <div class="menu">
+        <div class="menuIcon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-container"></nav>
+    </div>
     <main>
-        <!-- <img src="#" alt="Portrait"> -->
-        <!-- do i want to do a button or a js activated dropdown. or a list... idk yet. Probably js dropdown on a div. -->
-        <div>
-            <p>This is a faux Chamber of Commerce site for my home town.</br>This site features: simple API connections, and a JSON file that i developed, which is new for me.</p>
-            <a href="https://this-is-matt.github.io/wdd230/Chamber%20of%20Commerce/index.html"><img class="siteImg" src="images/OgdenChamber.png" alt="Snapshot of the home page for a chamber of Commerce site."></a>
-        </div> 
-        
-        <div>
-            <p>This is my project site for one of my classes. </br>This site features: API connections, responsive design, and efficient resource loading</p>
-            <a href="https://this-is-matt.github.io/wdd230/lesson11/index.html"><img class="siteImg" src="images/seirr.png" alt="Snapshot of the home page for my class assignment"></a>
+        <div class="main-hero">
+            <img src="images/mText.svg" alt="Matt's Logo" class="hero-logo">
         </div>
-      
-        <div>
-            <p>This is a website that is currently under development. </br>This site will feature simple styling, a scheduling section, and a payment collection section.  </p>
-            <a href="https://this-is-matt.github.io/nailLadyBritt/"><img  class="siteImg" src="images/nlb.png" alt="Snapshot of the home page for Nail Lady Britt"></a>
+       
+        <section class="project-container">
+
+        <div class="project-card card1">
+            <h3>Currency Exchange</h3>
+            <a href="currencyExchange/index.html"> <img class="project-img" src="images/CuEx.jpg" alt="Project Image"></a>
         </div>
-        
-        <div class="contact"><p>Mcp6000@gmail.com<br> Cell: 801-498-0647</p></div>
+        <div class="project-card card2">
+            <h3>Nail Lady Britt</h3>
+            <a href="https://www.nailLadyBritt.com"> <img class="project-img" src="images/NLB.jpg" alt="Project Image"></a>
+        </div>
+        <div class="project-card card3">
+            <h3>Ogden Chamber of Commerce</h3>
+            <a href="https://this-is-matt.github.io/wdd230/Chamber%20of%20Commerce/index.html"> <img class="project-img" src="images/occ.jpg" alt="Project Image"></a>
+        </div>
+        <div class="project-card card4">
+            <h3>Zen Garden</h3>
+            <a href="https://this-is-matt.github.io/ZenGardenGroupProject/"> <img class="project-img" src="images/zen.jpg" alt="Project Image"></a>
+        </div>
+        </section>
+        <div class="bg-wide">
+        <section class="intro-container">
+            <h2>A little about me:</h2>
+            <p>My name is Matt. I will soon be graduated with a degree in Applied Technology accompanied by certifications in web development, Front-end Web Development, and Databases. I enjoy the full-stack, but i enjoy most the front-end work. It has always drawn me in more than the other aspects. During the day I Work as a Product Manager at a smaller bank. At night and on weekends I am working on development a freelance web development company and i hope to begin developing WordPress themes.<br><br>
+            I love to learn and grow. My favorite things in life are where I find myself up against a challenge and i get to work toward overcoming that obstacle. I am a good mix of a people person and a computer person, which makes me a particularly good person to work with.<br><br>
+            I love to meet new people, so if you have questions for me or see an opportunity for us to work together, please reach out!</p>
+            <img src="images/profilePic.jpg" alt="matt's Headshot" class="intro-img">
+        </section>
+    </div>
     </main>
     <footer>
-        
-        <p>&copy; <span class="year"> </span> Matt Palmer</p>
+        <section class="contact">
+            <h1>Matt Palmer</h1>
+            <p>Email: palmer.c.matt@gmail.com</p>
+            <p>(801) 498-0647</p>
+        </section>
     </footer>
 </body>
 

@@ -1,0 +1,19 @@
+{
+    "navName": [
+        "Home",
+        "Projects",
+        "About Me",
+        "Education", 
+        "Technologies",
+        "Resume"
+    ],
+    "navPath":[
+         "index.html",
+         "projects.html",
+         "aboutme.html",
+         "education.html",
+         "tech.html",
+         "resume.html"
+    ],
+    "projects":[]
+ }

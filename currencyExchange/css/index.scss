@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+// variables
+$darkest: #1f2791;
+$darker: #5C82FA;
+$medium: #87FF8F;
+$lighter: #AAF8FF;
+$lightest: #eae8e8;
+
+@mixin flex($justify: space-between) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+}
+
+@mixin grid($c: 6, $r: auto) {
+    display: grid;
+    grid-template-columns: repeat($c, 1fr);
+    grid-template-rows: repeat($r, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+body{
+    font-size: 20px;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Comfortaa', cursive;
+    
+}
+nav{
+background: $darker;
+padding: .25rem;  
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    max-width: 80%;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: $lightest;
+    transition-duration: 500ms;
+    &:hover{
+        color:$lighter;
+        font-size: 1.3rem;
+    }
+}
+.main-conv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 850px;
+    margin: 1.5rem auto;
+    background: $darkest;
+    color: $lightest;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 8px rgba(152, 151, 151, 0.461);
+}
+.main-index{
+    max-width: 850px;
+    margin: 1.5rem auto;
+    background: $darkest;
+    color: $lightest;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 8px rgba(152, 151, 151, 0.461);
+}
+.main-doc{
+    max-width: 850px;
+    margin: 1.5rem auto;
+    background: $darkest;
+    color: $lightest;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 8px rgba(152, 151, 151, 0.461);
+}
+h1{
+    grid-column: 1/-1;
+    grid-row:1/2;
+    margin-top: 0rem;
+    padding-top: 0;
+}
+.conv-container{
+    display: inline-flex;
+    flex-direction: column;
+    grid-row: 3/4;
+    select, input, button{
+        height: 2rem;
+        margin: 0 0 .75rem 0;
+        border-radius: 8px;
+        border: solid 2px $lightest;
+    }
+    select, input{
+        font-size: 1.25rem;
+        padding-left: 1rem;
+    }
+    button{
+        background: #0000;
+        color: $lightest;
+        font-weight: bold;
+        width: 50%;
+        margin-right:  auto;
+        padding: .5rem; 
+        transition: 250ms ease-out;
+        &:hover{
+            background: $lightest;
+            color: $darkest;
+            transform: scale(1.05);
+            transform-origin: top left;
+        }       
+    }
+}
+.result{
+    margin: auto;
+    color: $lightest;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+footer{
+    background: $darker;
+    color: $lightest;
+    padding: .75rem;
+    text-align: center;
+    a{
+        color: $lightest;
+    }
+}

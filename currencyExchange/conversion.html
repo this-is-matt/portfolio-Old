@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <script type="module" defer src="controller/controllerConv.js"></script>
+    <script type="module" defer src="model/modelConv.js"></script>
+    <script type="module" defer src="view/viewConv.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navItem"><a href="index.html" class="navLink">Home</a></li>
+            <li class="navItem"><a href="conversion.html" class="navLink">Conversion Pair App</a></li>
+            <li class="navItem"><a href="standard.html" class="navLink">Full Conversion Chart</a></li>
+            <li class="navItem"><a href="document.html" class="navLink">Documentation</a></li>
+            <li class="navItem"><a href="https://www.mattpalmers.site" class="navLink">Back to Portfolio</a></li>
+        </ul>
+    </nav>
+    <main class="main-conv">
+        <h1> Currency Conversion Using ExchangeRate-API</h1>
+        <p>Please provide the Currency Code for the Base and Target currencies and amount you would like to convert. The system default is to display the exchange rate (based
+            on $1.00).</p>
+        <form class="conv-container">
+            <label for="base">Base Currency: </label>
+            <select name="base" id="base" required><!-- options added dynamically--></select>
+            <label for="target">Target Currency: </label>
+            <select id="target" name="target" required><!-- options added dynamically--></select>
+            <label for="amt">Amount: </label>
+            <input type="text" id="amt" name="amt" required value="1">
+            <button type="button" id="getBtn">Get Exchange Rate</button>
+        </form>
+        <div class="result"></div>
+    </main>
+    <footer><span>©️2022 Matt Palmer | </span>
+        <span>Thanks to <a href="https://app.exchangerate-api.com">ExchangeRate-API</a> for providing such a seemless
+            integration. All data sourced from them. | </span><span>Return to <a
+                href="https://www.mattpalmers.site">Portfolio</a> Home</span>
+    </footer>
+</body>
+
+</html>

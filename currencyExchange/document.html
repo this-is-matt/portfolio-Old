@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Docs</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navItem"><a href="index.html" class="navLink">Home</a></li>
+            <li class="navItem"><a href="conversion.html" class="navLink">Conversion Pair App</a></li>
+            <li class="navItem"><a href="standard.html" class="navLink">Full Conversion Chart</a></li>
+            <li class="navItem"><a href="document.html" class="navLink">Documentation</a></li>
+            <li class="navItem"><a href="https://www.mattpalmers.site" class="navLink">Back to Portfolio</a></li>
+        </ul>
+    </nav>
+    <main class="main-doc">
+        <h1> Exchange Rate Apps Documentation</h1>
+        <section>
+            <h2>Learning Process</h2>
+            <p>This is not the first time I have connected to a simple API such as this one. One this that I thought was
+                interesting was how i used a string literal for the URL that i provided to the Fetch statement. This
+                allowed me to very easily provide default values for the amount, and easily have a dynamic URL based on
+                the user input. The somewhat dangerous part is that i am not currently validating the users input, which
+                is not good practice. I don't know what type of server side validation the exchange rate API has. I am
+                sure it is up to par, but it would be best if i had my own Client side validation and sanitation in
+                place for both the currency codes and the dollar amount.
+            </p>
+            <p>I struggled with getting the nodes from the DOM because i had my script tags in the header and i
+                neglected to defer them. So it was applying the query selectors to null values. It took me WAY too long
+                to figure that out. I need to figure out a way to remember simple things like that. I think that mostly
+                just comes with practice i guess.
+            </p>
+            <p>Took me a minute to remember that the best way to get data our of a fetch is to call a function inside
+                the .then. It is by far easier than anything else i tried. It may actually be the only way to properly
+                do it? I am not sure.
+            </p>
+        </section>
+        <section>
+            <h2>Future Updates to Project</h2>
+            <ul>
+                <li>Some error handling on fetch statements for both the conversion and standard requests</li>
+                <li>Client Side validation and sanitation for the inputs. Could easily add a regex pattern to assist
+                    with this.</li>
+                <li>For the conversion app i could return the converted result, but i could also return the return rate.
+                    Don't currently return that, but there is no reason not to.</li>
+                <li>For the conversion app i could return the Last updated time and the time it will next be updated.
+                    API Returns it, i just haven't added it.</li>
+                <li>Would love to get rid of awful currency code table and replace the input values with a json
+                    populated dropdown. That way i would be able to update my lists super easily and a could make
+                    dynamic lists.</li>
+                <li>After i get rid of the table i need to find a way to display the information about the currency
+                    codes i.e. the country and currency name in a seemless and sleek way.</li>
+                <li>Site map?</li>
+                <li>SEO? just for my practice, not so much because i am trying to monetize or anything.</li>
+                <li>Would like to add more resources, maybe sources from other API's so that the project/site is
+                    actually useful. Possibly a stock exchange integration, that might be better served in it's own
+                    project. Could combine the two, get a stock value and then convert it to another currency. Could be
+                    interesting.</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <span>©️2022 Matt Palmer | </span>
+        <span>Thanks to <a href="https://app.exchangerate-api.com">ExchangeRate-API</a> for providing such a seemless
+            integration. All data sourced from them. | </span>
+        <span>Return to <a href="https://www.mattpalmers.site">Portfolio</a> Home</span>
+    </footer>
+</body>
+
+</html>

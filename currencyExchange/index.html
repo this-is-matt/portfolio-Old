@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <!-- <script type="module" defer src="controller/controller.js"></script>
+    <script type="module" defer src="model/model.js"></script>
+    <script type="module" defer src="view/view.js"></script> -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navItem"><a href="index.html" class="navLink">Home</a></li>
+            <li class="navItem"><a href="conversion.html" class="navLink">Conversion Pair App</a></li>
+            <li class="navItem"><a href="standard.html" class="navLink">Full Conversion Chart</a></li>
+            <li class="navItem"><a href="document.html" class="navLink">Documentation</a></li>
+            <li class="navItem"><a href="https://www.mattpalmers.site" class="navLink">Back to Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-index">     
+        <h1> Exchange Rate Apps using ExchangeRate-API</h1>
+        <p>Welcome to the currency exchange center. This project is actively in development. The below sections will discuss the status of each portion of the project.</p>
+        <div class="convDoc">
+            <h2>Conversion Pair App</h2>
+            <p>The Conversion Pair app is quite useful. This application uses an api call that takes the base currency code, the target currency code, and amount you wish to convert. It then simply display the conversion for that amount.<br> There are some really cool things going on in this application. The first great thing is that the select form inputs are dynamically populated from a JSON file that contains all of the currency code information.<br> This way we ensure there are no errors that are caused by typos or user error in other ways. This application will default to one US Dollar as the base Currency and amount, this is the standard conversion rate that we often here about.<br> I would still like to add some higher quality client side validation. Another thing that i want to add is a better formatted output that includes more information about the currencies and their countries. I would also add a section that would tell when the conversion rates were last updated and when they will be updated next.</p>
+        </div>
+        <div class="fullDoc">
+            <h2>Full Conversion Chart App</h2>
+            <p>The Full Conversion Chart App is still very much under development. In fact, it is currently non operable. But when it is finished, the user will input a single base Currency Code and they will receive back a well formatted table that includes the conversion rates for every country. This is not incredibly useful, more just informational.<br> For this application to be completed, i need to fix the fetch that gathers the data and adjust the processing functions. They are not working properly.</p>
+        </div>
+        <div class="docDoc">
+            <h2>Documentation</h2>
+            <p>Because this project is part of my Portfolio i have decided to add documentation that documents the status of the project, my roadblocks, and what i still want to add/fix on the project. This will help me to keep track of my projects, but i think it is a good tool for those evaluating my portfolio to see how i work and think.</p>
+        </div>
+
+    </main>
+    <footer><span>©️2022 Matt Palmer | </span>
+        <span>Thanks to <a href="https://app.exchangerate-api.com">ExchangeRate-API</a> for providing such a seemless
+            integration. All data sourced from them. | </span><span>Return to <a
+                href="https://www.mattpalmers.site">Portfolio</a> Home</span>
+    </footer>
+</body>
+
+</html>
