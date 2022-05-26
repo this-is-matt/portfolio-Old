@@ -13,7 +13,7 @@
          "aboutme.html",
          "education.html",
          "tech.html",
-         "./resume/index.html"
+         "resume.html"
     ],
     "projects":[]
  }
