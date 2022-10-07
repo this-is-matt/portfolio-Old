@@ -215,9 +215,9 @@ h1 {
     background: $lighter;   
     grid-column: 1/2;
     grid-row: 1/2;
-    transition: .35s ease-out 200ms;
+    transition: .25s ease-out 100ms;
     &:hover{
-        transform: scale(1.07);
+        transform: scale(1.01);
         transform-origin: bottom right;
         box-shadow: 5px 5px 10px 5px rgba(74, 74, 74, 0.467);
     }
@@ -227,9 +227,9 @@ h1 {
     background-color: $medium;
     grid-column: 2/3;
     grid-row: 1/2;
-    transition: .35s ease-out 200ms;
+    transition: .25s ease-out 100ms;
     &:hover{
-        transform: scale(1.07);
+        transform: scale(1.01);
         transform-origin: bottom left;
         box-shadow: 5px 5px 10px 5px rgba(74, 74, 74, 0.467);
     }
@@ -241,9 +241,9 @@ h1 {
     grid-column: 1/2;
     grid-row: 2/3;
     color: $lightest;
-    transition: .35s ease-out 200ms;
+    transition: .25s ease-out 100ms;
     &:hover{
-        transform: scale(1.07);
+        transform: scale(1.01);
         transform-origin: top right;
         box-shadow: 5px 5px 10px 5px rgba(74, 74, 74, 0.467);
     }
@@ -254,9 +254,9 @@ h1 {
     grid-column: 2/3;
     grid-row: 2/3;
     color: $lightest;
-    transition: .35s ease-out 200ms;
+    transition: .25s ease-out 100ms;
     &:hover{
-        transform: scale(1.07);
+        transform: scale(1.01);
         transform-origin: top left;
         box-shadow: 5px 5px 10px 5px rgba(74, 74, 74, 0.467);
     }
