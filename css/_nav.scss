@@ -1,0 +1,80 @@
+@use 'var';
+
+.nav-item {
+    padding: .5rem;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    height: 6px;
+    width: 45px;
+    background: var.$darker;
+    margin: .35rem;
+    transition: all .75s ease-in-out;
+}
+
+.change .bar1 {
+    transform: rotate(0.125turn) translate(8px, 8px);
+    background: var.$lighter;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(-0.125turn) translate(8px, -8px);
+    background: var.$lighter;
+}
+
+.menuIcon {
+    margin: .75rem;
+    transition: all .75s ease-in-out;
+    position: fixed;
+    z-index: 2;
+}
+
+.change .menuIcon {
+    transform: translate(215px);
+}
+
+.nav-container {
+    background: var.$darkest;
+    padding: 1rem;
+    width: 270px;
+    height: 100vh;
+    transition: all .75s ease-in-out;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.change .nav-container {
+    transform: translateX(0%);
+}
+
+.nav-list {
+    text-decoration: none;
+    margin-top: 4.5rem;
+}
+
+.nav-item {
+    list-style: none;
+
+    a {
+        color: var.$lightest;
+        font-size: 2rem;
+    }
+
+    &:hover {
+        padding: .25rem;
+        font-size: 2.25rem;
+    }
+}

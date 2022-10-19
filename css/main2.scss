@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+//variables
+$darkest: #1f2791;
+$darker: #5C82FA;
+$medium: #87FF8F;
+$lighter: #AAF8FF;
+$lightest: #eae8e8;
+
+@mixin flex($justify: space-between, $direction : row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+// customize float
+@mixin float($f: left) {
+    float: $f;
+    width: 30%;
+    height: auto;
+}
+
+// clearfix
+@mixin clearFix($overflow: auto, $padding: 1rem) {
+    overflow: $overflow;
+    padding: $padding;
+}
+
+body {
+    background: $lightest;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+main {
+    text-align: center;
+}
+
+.menu {
+    display: none;
+}
+
+.main-hero {
+    @include flex(center);
+}
+
+//specific
+h3 {
+    clear: both;
+}
+.project-card{
+    width: 90%;
+    margin: auto;
+}
+.card1,
+.card3 {
+    // border: solid;
+    margin: 2rem;
+    @include clearFix();
+
+    .project-img {
+        @include float();
+        margin-right: 2rem;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.card2,
+.card4 {
+   // border: solid;
+    margin: 2rem;
+    @include clearFix();
+
+    .project-img {
+        @include float(right);
+        margin-left: 2rem;
+    }
+
+    p {
+        text-align: right;
+    }
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+body {
+  background: #eae8e8;
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+main {
+  text-align: center;
+}
+
+.menu {
+  display: none;
+}
+
+.main-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h3 {
+  clear: both;
+}
+
+.project-card {
+  width: 90%;
+  margin: auto;
+}
+
+.card1,
+.card3 {
+  margin: 2rem;
+  overflow: auto;
+  padding: 1rem;
+}
+.card1 .project-img,
+.card3 .project-img {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-right: 2rem;
+}
+.card1 p,
+.card3 p {
+  text-align: left;
+}
+
+.card2,
+.card4 {
+  margin: 2rem;
+  overflow: auto;
+  padding: 1rem;
+}
+.card2 .project-img,
+.card4 .project-img {
+  float: right;
+  width: 30%;
+  height: auto;
+  margin-left: 2rem;
+}
+.card2 p,
+.card4 p {
+  text-align: right;
+}
+
+/*# sourceMappingURL=main2.css.map */
