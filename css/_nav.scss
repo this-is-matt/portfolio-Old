@@ -15,7 +15,7 @@
     width: 45px;
     background: var.$darker;
     margin: .35rem;
-    transition: all .75s ease-in-out;
+    transition: all var.$nav-transition ease-in-out;
 }
 
 .change .bar1 {
